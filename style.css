@@ -1,0 +1,120 @@
+.confirmbutton{
+    text-align: center;
+}
+
+.field{
+    height: 603px;
+    width: 405px;
+    top: 10px;
+
+    background-size: 100% auto;
+    background: url("Field2.jpg") no-repeat center center;
+
+}
+.guesstable{
+
+    background: red;
+}
+
+.scoreboard{
+    background: blue;
+
+
+}
+h2{
+ text-align: center;
+}
+
+@media (min-width: 1000px){
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .guesspanel{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        margin: 5px;
+    }
+
+    .field{
+        display: flex;
+        flex: 1 2 auto;
+        flex-direction: row;
+        margin: 5px;
+    }
+
+    .scoreboard{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 999px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .guesspanel{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        margin: 5px;
+        order: 1;
+
+    }
+
+    .field{
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row;
+        margin: 5px;
+        order: 3;
+    }
+
+    .scoreboard{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        margin: 5px;
+        order: 2;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .field{
+        display: flex;
+        flex: auto;
+        width: 100%;
+        margin: 5px;
+        order: 1;
+
+
+    }
+
+    .guesspanel{
+        display: flex;
+        flex: 1 1 auto;
+        margin: 50px;
+        order: 2;
+
+
+    }
+
+    .scoreboard{
+        display: flex;
+        flex: auto;
+        order: 3;
+        margin: 5px;
+    }
+}
