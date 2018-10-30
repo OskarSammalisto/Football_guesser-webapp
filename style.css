@@ -1,3 +1,16 @@
+
+.matchbanner{
+
+}
+
+.crest{
+    width: 80px;
+    height: 124px;
+    background: url("livcrest.png")no-repeat center center;
+    background-size: 100% auto;
+}
+
+
 .confirmbutton{
     text-align: center;
 }
@@ -24,13 +37,13 @@
 h2{
  text-align: center;
 }
-
+/*pc*/
 @media (min-width: 1000px){
     .main{
         display: flex;
         flex-direction: row;
     }
-    .guesspanel{
+    .guessbar{
         display: flex;
         flex-direction: row;
         flex: 1 1 auto;
@@ -51,13 +64,13 @@ h2{
         margin: 5px;
     }
 }
-
+/*tablet*/
 @media (min-width: 601px) and (max-width: 999px){
     .main{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
-    .guesspanel{
+    .sidebar{
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
@@ -69,22 +82,22 @@ h2{
     .field{
         display: flex;
         flex: 1 1 auto;
-        flex-direction: row;
+
         margin: 5px;
         order: 3;
     }
 
-    .scoreboard{
+   /* .scoreboard{
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
         margin: 5px;
         order: 2;
         width: auto;
-    }
+    }*/
 
 }
-
+/*mobile*/
 @media (max-width: 600px) {
     .main{
         display: flex;
@@ -102,8 +115,11 @@ h2{
 
     }
 
-    .guesspanel{
+    .sidebar{
         display: flex;
+        flex-direction: column;
+        position: center;
+        width: 80%;
         flex: 1 1 auto;
         margin: 50px;
         order: 2;
@@ -111,10 +127,10 @@ h2{
 
     }
 
-    .scoreboard{
+    /*.scoreboard{
         display: flex;
         flex: auto;
         order: 3;
         margin: 5px;
-    }
+    }*/
 }
